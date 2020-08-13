@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components": ["components"],
+      "@constants": ["constants"],
+      "@containers": ["containers"],
+      "@pages": ["pages"],
+      "@graphqlTypes": ["graphqlTypes"],
+      "@utils": ["utils"],
+      "@models": ["models"],
+      "@assets": ["assets"]
+    },
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true
+  }
+}
