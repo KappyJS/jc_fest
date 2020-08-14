@@ -1,3 +1,4 @@
 import { createAction } from "@reduxjs/toolkit";
+import { IRateOptions } from "common";
 
-export const onAppInitAction = createAction<string>("dsadsa");
+export const onRateClickAction = createAction<IRateOptions>("RATE_CLICK");

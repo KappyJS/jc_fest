@@ -1,0 +1,40 @@
+.prefix {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+
+  color: #000000;
+}
+.row{
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textGrid {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 12px;
+  padding: 12px 4px;
+}
+
+.rates {
+  float: right;
+}
+
+.hr{
+    border: 1px solid #EF0D50;
+    width: 100%;
+}

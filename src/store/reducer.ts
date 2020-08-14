@@ -1,10 +1,18 @@
-import { createReducer } from "@reduxjs/toolkit";
-import { onAppInitAction } from "../actions";
+import { combineReducers } from "@reduxjs/toolkit";
+import dataReducer, { IDataState } from "./data";
+import sortsReducer, { ISortsState } from "./sorts";
+import filtersReducer, { IFiltersState } from "./filters";
 
-type Reducer = string | null;
+export interface IRootState {
+  data: IDataState;
+  sorts: ISortsState;
+  filters: IFiltersState;
+}
 
-const rootReducer = createReducer<Reducer>(null, builder => {
-  builder.addCase(onAppInitAction, (a, { payload }) => payload);
+const rootReducer = combineReducers<IRootState>({
+  data: dataReducer,
+  sorts: sortsReducer,
+  filters: filtersReducer
 });
 
 export default rootReducer;
